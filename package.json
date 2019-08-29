@@ -1,0 +1,27 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "pratice nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "vidya sagar",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "jszip": "^3.2.2",
+    "lodash": "^4.17.15",
+    "pug": "^2.0.4",
+    "request": "^2.88.0",
+    "yelp-fusion": "^3.0.0"
+  }
+}

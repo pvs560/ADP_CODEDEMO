@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title #{docTitle}
+        link(rel="stylesheet", href="/css/main.css")
+        link(rel="stylesheet", href="/css/product.css")
+    body
+        header.main-header
+            nav.main-header__nav
+                ul.main-header__item-list
+                    li.main-header__item
+                      h1 The top #{prods.length} shops in Alpharetta
+
+        main
+            if prods.length > 0
+                .grid
+                    each product in prods
+                        article.card.product-item
+                            header.card__header
+                                h1.product__title #{product.name}
+                            div.card__image
+                                img(src=`${product.image_url}`, alt="A Book")
+                            div.card__content
+                                h2.product__price rating #{product.rating}
+                                p.product__description #{product.location.display_address[0]} #{product.location.display_address[1]} #{product.location.display_address[2]}  
+                                h2.product__price price #{product.price}    
+            else
+                h1 No Products
