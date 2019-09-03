@@ -4,7 +4,6 @@ const express = require("express");
 
 const bodyParser = require("body-parser");
 
-
 const shopRoutes = require("./routes/shop");
 
 const app = express();
