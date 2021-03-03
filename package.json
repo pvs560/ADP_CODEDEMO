@@ -20,7 +20,7 @@
     "express-handlebars": "^3.1.0",
     "jszip": "^3.2.2",
     "lodash": "^4.17.15",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "request": "^2.88.0",
     "yelp-fusion": "^3.0.0"
   }
